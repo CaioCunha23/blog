@@ -254,19 +254,19 @@ li {
 }
 
 .chamadasNoticias1::before {
-    background-image: url("/imagens/cobUniforme.jpg");
+    background-image: url("./imagens/cobUniforme.jpg");
 }
 
 .chamadasNoticias2::before {
-    background-image: url("/imagens/atletasBr.jpg");
+    background-image: url("./imagens/atletasBr.jpg");
 }
 
 .chamadasNoticias3::before {
-    background-image: url("/imagens/torre.jpg");
+    background-image: url("./imagens/torre.jpg");
 }
 
 .chamadasNoticias4::before {
-    background-image: url("/imagens/modalidades.jpg");
+    background-image: url("./imagens/modalidades.jpg");
 }
 
 .chamadasNoticias1::after,
@@ -366,6 +366,43 @@ footer {
     float: left;
     width: 45%;
     padding: 1.25rem;
+}
+
+
+#botao404 {
+    display: flex;
+    background-color: #1e90ff;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 2rem;
+    transition: 0.3s ease;
+}
+
+#paginaErro {
+    display: flex;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+}
+
+#paginaErro p {
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+}
+
+#botao404:hover {
+    transform: scale(1.2);
+}
+
+#erro {
+    width: 80%;
+    border-radius: 80%;
 }
 
 @media (max-width: 1600px) {
