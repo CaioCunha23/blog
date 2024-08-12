@@ -214,6 +214,11 @@ li {
     text-decoration: none;
     color: #1e90ff;
     font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.2);
 }
 
 .chamadasNoticias1,
@@ -343,6 +348,16 @@ footer {
     background-color: #f1f1f1;
 }
 
+#containerReverse img,
+.containerCinza img,
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -407,7 +422,7 @@ footer {
 
 @media (max-width: 1600px) {
     #mainZigZag {
-        width: 100%;
+        width: 80%;
     }
 
     nav {
@@ -417,7 +432,7 @@ footer {
     .column-66,
     .column-33 {
         flex: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 
     .container {
@@ -430,6 +445,7 @@ footer {
 
     .lista {
         flex-direction: column;
+        max-width: 90%;
     }
 
     .lista #listaUm {
@@ -440,6 +456,33 @@ footer {
     .lista #listaDois {
         width: 100%;
         padding-left: 0.25rem;
+    }
+
+    #curiosidades ul {
+        list-style-position: inside;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    nav p {
+        display: none;
+    }
+
+    #containerReverse .row {
+        flex-direction: column-reverse;
+    }
+
+    .container .row {
+        flex-direction: column-reverse;
+    }
+
+    #mainZigZag img {
+        max-width: 90%;
     }
 }
 
@@ -475,6 +518,10 @@ footer {
     #filmes img {
         height: 15rem;
         width: 10rem;
+    }
+
+    #noticias .card h3 {
+        font-size: 0.938rem;
     }
 }
 
@@ -512,6 +559,10 @@ footer {
 
     .postagens h2 {
         font-size: 1.5rem;
+    }
+
+    #noticias .card h3 {
+        font-size: 0.625rem;
     }
 }
 
